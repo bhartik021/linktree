@@ -10,6 +10,11 @@ const Linktree = () => {
       document.body.style.overflow = "auto";
     };
   }, []);
+
+  const redirectToURL = (url) => {
+    window.location.href = url;
+  };
+
   return (
     <div
       className="bg-black min-h-screen py-12 px-4 sm:px-6 lg:px-8"
@@ -43,37 +48,51 @@ const Linktree = () => {
           </p>
 
           <div className="w-[588px] overflow-x-auto flex flex-col items-start justify-start p-6 box-border gap-[16px_0px] max-w-full z-[1]">
-            <button className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
+            <button 
+            onClick={() => redirectToURL("https://www.bhartikumari.in/")}
+            className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
               <div className="flex-1 relative text-base leading-[24px] font-medium font-text-md text-text-color-light-mode text-center inline-block [backdrop-filter:blur(4px)] max-w-full">
                 Portfolio
               </div>
             </button>
-            <button className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
+            <button 
+            onClick={() => redirectToURL("mailto:bhartik021@gmail.com")}
+            className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
               <div className="flex-1 relative text-base leading-[24px] font-medium font-text-md text-text-color-light-mode text-center inline-block [backdrop-filter:blur(4px)] max-w-full">
                 Gmail
               </div>
             </button>
-            <button className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
+            <button 
+            onClick={() => redirectToURL("https://www.linkedin.com/in/bhartik021/")}
+            className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
               <div className="flex-1 relative text-base leading-[24px] font-medium font-text-md text-text-color-light-mode text-center inline-block [backdrop-filter:blur(4px)] max-w-full">
                 LinkedIn
               </div>
             </button>
-            <button className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
+            <button 
+            onClick={() => redirectToURL("https://twitter.com/bhartik021")}
+            className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
               <div className="flex-1 relative text-base leading-[24px] font-medium font-text-md text-text-color-light-mode text-center inline-block [backdrop-filter:blur(4px)] max-w-full">
                 Twitter
               </div>
             </button>
-            <button className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
+            <button 
+            onClick={() => redirectToURL("https://github.com/bhartik021")}
+            className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
               <div className="flex-1 relative text-base leading-[24px] font-medium font-text-md text-text-color-light-mode text-center inline-block [backdrop-filter:blur(4px)] max-w-full">
                 GitHub
               </div>
             </button>
-            <button className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
+            <button 
+            onClick={() => redirectToURL("https://www.instagram.com/bhartik021/")}
+            className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
               <div className="flex-1 relative text-base leading-[24px] font-medium font-text-md text-text-color-light-mode text-center inline-block [backdrop-filter:blur(4px)] max-w-full">
                 Instagram
               </div>
             </button>
-            <button className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
+            <button 
+            onClick={() => redirectToURL("https://medium.com/@bhartik021")}
+            className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
               <div className="flex-1 relative text-base leading-[24px] font-medium font-text-md text-text-color-light-mode text-center inline-block [backdrop-filter:blur(4px)] max-w-full">
                 Medium
               </div>

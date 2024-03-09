@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Linktree = () => {
+  useEffect(() => {
+    // Prevent scrolling on mount
+    document.body.style.overflow = "hidden";
+
+    // Re-enable scrolling on unmount
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
   return (
     <div
       className="bg-black min-h-screen py-12 px-4 sm:px-6 lg:px-8"
@@ -8,8 +17,9 @@ const Linktree = () => {
         backgroundImage: "url('../src/assets/bgLightMode.png')",
         backgroundAttachment: "fixed", // Keep the background image fixed
         backgroundRepeat: "no-repeat", // Prevent background image from repeating
-        backgroundSize: "cover" // Ensure background image covers the entire container
-      }}>
+        backgroundSize: "cover", // Ensure background image covers the entire container
+      }}
+    >
       <div className="max-w-3xl mx-auto">
         <div className="flex flex-col items-center">
           <img
@@ -18,11 +28,14 @@ const Linktree = () => {
             alt="Bharti Kumari"
           />
 
-          <h1 className="font-bold text-black mb-3"
-          style={{
-            fontSize: "2rem"
-          }}>
-         Bharti Kumari</h1>
+          <h1
+            className="font-bold text-black mb-3"
+            style={{
+              fontSize: "2rem",
+            }}
+          >
+            Bharti Kumari
+          </h1>
 
           <p className="text-lg text-black-100 mb-6 text-center">
             Amazon ML Summer'23 | SIH'23 Finalist | Samsung SFT - Top 50 |
@@ -30,8 +43,7 @@ const Linktree = () => {
           </p>
 
           <div className="w-[588px] overflow-x-auto flex flex-col items-start justify-start p-6 box-border gap-[16px_0px] max-w-full z-[1]">
-            <button 
-            className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
+            <button className="cursor-pointer py-2 px-[23px] bg-surface-color-light-mode w-[540px] rounded-lg [backdrop-filter:blur(8px)] box-border flex flex-row items-start justify-start border-[1px] border-solid border-stroke-color-light-mode hover:bg-darkslategray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-darkslategray-100">
               <div className="flex-1 relative text-base leading-[24px] font-medium font-text-md text-text-color-light-mode text-center inline-block [backdrop-filter:blur(4px)] max-w-full">
                 Portfolio
               </div>
@@ -82,7 +94,6 @@ const Linktree = () => {
           </a>
         </div>
       </div>
-      
     </div>
   );
 };

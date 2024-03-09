@@ -1,30 +1,19 @@
 import React, { useEffect } from "react";
+import BackgroundImage from "./BackgroundImage";
+import Footer from "./Footer";
 
 const Linktree = () => {
-  useEffect(() => {
-    // Prevent scrolling on mount
-    document.body.style.overflow = "hidden";
-
-    // Re-enable scrolling on unmount
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, []);
-
   const redirectToURL = (url) => {
     window.open(url, "_blank");
   };
 
   return (
-    <div
-      className="bg-black min-h-screen py-12 px-4 sm:px-6 lg:px-8"
-      style={{
-        backgroundImage: "url('../src/assets/bgLightMode.png')",
-        backgroundAttachment: "fixed", // Keep the background image fixed
-        backgroundRepeat: "no-repeat", // Prevent background image from repeating
-        backgroundSize: "cover", // Ensure background image covers the entire container
-      }}
-    >
+    <div>
+     <BackgroundImage />   
+     <div
+        className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 overflow-y-auto"
+        style={{ zIndex: "1" }} // Ensure the content is above the background
+      >
       <div className="max-w-3xl mx-auto">
         <div className="flex flex-col items-center">
           <img
@@ -101,18 +90,9 @@ const Linktree = () => {
         </div>
       </div>
 
-      <div className="flex flex-row justify-center text-center max-w-full">
-        <div className="relative leading-[24px] z-[1]">
-          {`Made with ♥ `}
-          <a
-            className="text-[inherit]"
-            href="https://www.bhartikumari.in/"
-            target="_blank"
-          >
-            <span className="[text-decoration:underline]">Bharti Kumari</span>
-          </a>
-        </div>
-      </div>
+    < Footer />
+
+    </div>
     </div>
   );
 };

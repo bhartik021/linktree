@@ -12,7 +12,7 @@ const Linktree = () => {
   }, []);
 
   const redirectToURL = (url) => {
-    window.location.href = url;
+    window.open(url, "_blank");
   };
 
   return (

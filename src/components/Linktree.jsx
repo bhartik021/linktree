@@ -4,8 +4,12 @@ const Linktree = () => {
   return (
     <div
       className="bg-black min-h-screen py-12 px-4 sm:px-6 lg:px-8"
-      style={{ backgroundImage: "url('../src/assets/bgLightMode.png')" }}
-    >
+      style={{
+        backgroundImage: "url('../src/assets/bgLightMode.png')",
+        backgroundAttachment: "fixed", // Keep the background image fixed
+        backgroundRepeat: "no-repeat", // Prevent background image from repeating
+        backgroundSize: "cover" // Ensure background image covers the entire container
+      }}>
       <div className="max-w-3xl mx-auto">
         <div className="flex flex-col items-center">
           <img

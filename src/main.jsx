@@ -7,7 +7,7 @@ import Linktree from './components/Linktree.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Router basename="/linktree">
+    <Router>
       <App />
       <Linktree />
     </Router>

@@ -102,7 +102,9 @@ linktree
 - Displays Bharti Kumari's name, bio, and profile picture.
 - Provides buttons to navigate to Bharti Kumari's various online profiles such as Portfolio, Gmail, LinkedIn, Twitter, GitHub, Instagram, and Medium.
 
-## Author
+## Acknowledgements
+
+### Author
 
 - Bharti Kumari
   - Portfolio: [bhartikumari.in](https://www.bhartikumari.in/)
@@ -112,6 +114,19 @@ linktree
   - GitHub: [bhartik021](https://github.com/bhartik021)
   - Instagram: [@bhartik021](https://www.instagram.com/bhartik021/)
   - Medium: [@bhartik021](https://medium.com/@bhartik021)
+
+### Third-Party Dependencies
+
+I'd like to extend the gratitude to the developers of the following third-party libraries, frameworks, and tools that were instrumental in building this project:
+
+- [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for quickly building custom designs.
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start) - A routing library for React applications.
+- [ReactDOM](https://reactjs.org/docs/react-dom.html) - Provides DOM-specific methods for working with React.
+- [Node.js](https://nodejs.org/) - A JavaScript runtime environment that executes JavaScript code outside of a web browser.
+- [npm](https://www.npmjs.com/) / [yarn](https://yarnpkg.com/) - Package managers for Node.js packages.
+
+These tools and libraries significantly contributed to the development of my project, and I am thankful for the hard work put in by their respective developers.
 
 ## License
 

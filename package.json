@@ -1,7 +1,7 @@
 {
   "name": "linktree",
   "private": true,
-  "homepage": "http://bhartik021.github.io/linktree",
+  "homepage": "https://bhartik021.github.io/linktree/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

@@ -1,15 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import BackgroundImage from "./BackgroundImage";
 import Footer from "./Footer";
 import ButtonComponent from "./ButtonComponent";
 
 const Linktree = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   const redirectToURL = (url) => {
     window.open(url, "_blank");
   };
@@ -19,13 +13,8 @@ const Linktree = () => {
       <BackgroundImage darkMode={darkMode} />
       <div
         className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 overflow-y-auto"
-        style={{ zIndex: "1" }} // Ensure the content is above the background
+        style={{ zIndex: "1" }} 
       >
-        <div className="absolute top-4 right-4">
-          <button className="bg-transparent text-white" onClick={toggleMode}>
-            {darkMode ? "Light Mode" : "Dark Mode"}
-          </button>
-        </div>
         <div className="max-w-3xl mx-auto">
           <div className="flex flex-col items-center">
             <img

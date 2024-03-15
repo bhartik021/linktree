@@ -14,3 +14,5 @@ const BackgroundImage = () => {
     ></div>
   );
 };
+
+export default BackgroundImage;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BackgroundImage from "./BackgroundImage";
 import Footer from "./Footer";
 import ButtonComponent from "./ButtonComponent";
@@ -10,10 +10,10 @@ const Linktree = () => {
 
   return (
     <div>
-      <BackgroundImage darkMode={darkMode} />
+      <BackgroundImage />
       <div
         className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 overflow-y-auto"
-        style={{ zIndex: "1" }} 
+        style={{ zIndex: "1" }} // Ensure the content is above the background
       >
         <div className="max-w-3xl mx-auto">
           <div className="flex flex-col items-center">
